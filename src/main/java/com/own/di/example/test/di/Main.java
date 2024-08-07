@@ -1,7 +1,6 @@
 package com.own.di.example.test.di;
 
 import com.own.di.example.framework.context.ApplicationContext;
-import com.own.di.example.challenge.implementation.formatters.*;
 import com.own.di.example.test.di.implementation.formatters.*;
 
 import java.time.LocalTime;

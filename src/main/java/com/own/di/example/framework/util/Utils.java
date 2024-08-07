@@ -2,10 +2,20 @@ package com.own.di.example.framework.util;
 
 import lombok.experimental.UtilityClass;
 
+/**
+ * The Utils class provides utility methods for the application.
+ */
 @UtilityClass
 public class Utils {
-    public boolean containsIgnoreCase(String str, String searchStr)     {
-        if(str == null || searchStr == null) return false;
+    /**
+     * Checks if a string contains another string, ignoring case considerations.
+     *
+     * @param str       the string to search in
+     * @param searchStr the string to search for
+     * @return true if the searchStr is found within str, false otherwise
+     */
+    public boolean containsIgnoreCase(String str, String searchStr) {
+        if (str == null || searchStr == null) return false;
 
         final int length = searchStr.length();
         if (length == 0)

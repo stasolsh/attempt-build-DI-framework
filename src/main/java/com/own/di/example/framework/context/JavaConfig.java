@@ -10,6 +10,9 @@ import java.util.Objects;
 
 import static java.util.Arrays.stream;
 
+/**
+ * The JavaConfig class provides configuration settings for the application context.
+ */
 @AllArgsConstructor
 public class JavaConfig implements Config {
     private Reflections scanner;

@@ -13,11 +13,19 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * The ObjectFactory class is responsible for creating and configuring objects in the application context.
+ */
 public class ObjectFactory {
 
     private final ApplicationContext context;
     private List<ObjectConfigurator> configurators = new ArrayList<>();
 
+    /**
+     * Constructs an ObjectFactory with the specified application context.
+     *
+     * @param context the application context
+     */
     @SneakyThrows
     public ObjectFactory(ApplicationContext context) {
         this.context = context;
@@ -27,7 +35,14 @@ public class ObjectFactory {
         }
     }
 
-
+    /**
+     * Creates an object of the specified type.
+     *
+     * @param type the class type of the object
+     * @param <T>  the type of the object
+     * @return the created object
+     * @throws Exception if an error occurs during object creation
+     */
     public <T> T createObject(Class<T> type) throws Exception {
 
         T t = type.getDeclaredConstructor().newInstance();

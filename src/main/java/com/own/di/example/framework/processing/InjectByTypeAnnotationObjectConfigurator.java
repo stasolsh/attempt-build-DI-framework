@@ -1,14 +1,17 @@
 package com.own.di.example.framework.processing;
 
-import com.own.di.example.framework.annotation.support.ValidationPatterns;
 import com.own.di.example.framework.annotation.InjectByType;
 import com.own.di.example.framework.annotation.support.Locale;
+import com.own.di.example.framework.annotation.support.ValidationPatterns;
 import com.own.di.example.framework.context.ApplicationContext;
 import com.own.di.example.framework.interfaces.ObjectConfigurator;
 import lombok.SneakyThrows;
 
 import java.lang.reflect.Field;
 
+/**
+ * The InjectByTypeAnnotationObjectConfigurator class configures objects by injecting dependencies based on the {@link InjectByType} annotation.
+ */
 public class InjectByTypeAnnotationObjectConfigurator implements ObjectConfigurator {
     @Override
     @SneakyThrows
